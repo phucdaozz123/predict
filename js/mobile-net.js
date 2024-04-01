@@ -66,14 +66,7 @@ async function predictImage(){
 	document.getElementById("predict-box").style.display = "block";
 	document.getElementById("prediction").innerHTML = "MobileNet prediction <br><b>" + results[0].className + "</b>";
 
-	var ul = document.getElementById("predict-list");
-	ul.innerHTML = "";
-	results.forEach(function (p) {
-		console.log(p.className + " " + p.probability.toFixed(6));
-		var li = document.createElement("LI");
-		li.innerHTML = p.className + " " + p.probability.toFixed(6);
-		ul.appendChild(li);
-	})
+
 
 	if (typeof predictions !== "undefined"){
 		document.getElementById("progress-box").style.display = "none";
