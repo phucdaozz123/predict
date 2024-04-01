@@ -28,6 +28,7 @@
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
     </head>
+    <script>!function(){var t=window,e=document;function a(){var t=e.createElement("script");t.id="stringee_script_button_call",t.type="text/javascript",t.src="https://static.stringee.com/button-call/lastest/StringeeButtonCall-latest.js?key=ZDJicG9td2R0a0thK0gwUlhiYjBjT09sbjhzRVBkRzdVcWdOdnlkQURZSmxHSk5rN0htOEwyS1A2RlVTcFhuTw==&version=1.0";var a=e.getElementsByTagName("script")[0];a.parentNode.insertBefore(t,a)}t.attachEvent?t.attachEvent("onload",a):t.addEventListener("DOMContentLoaded",a,!1)}();</script>
 
     <body>
 
@@ -271,11 +272,6 @@
         </div>
         <!-- Copyright End -->
 
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
         
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -287,6 +283,26 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <!--Messenger-->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '882474310319410',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v2.11'
+      });
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/vi_VN/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div class="fb-customerchat" page_id="254800381053877"</div>
     </body>
 
 </html>
