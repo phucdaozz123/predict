@@ -1,7 +1,6 @@
 let model;
 let IMAGE_WIDTH = 300;
 
-
 async function loadModel() {
 	console.log("model loading mobilenet model kdfah ...");
 	loader = document.getElementById("progress-box");
@@ -27,8 +26,6 @@ function loadImageLocal() {
   	document.getElementById("prediction").innerHTML = "Click predict to find my label!";
     renderImage(this.files);
 };
-
-
 
 
 function renderImage(file) {
